@@ -1,0 +1,15 @@
+{
+    "stage": {
+      "pingIDPUrl":"https://w3id.alpha.sso.ibm.com/auth/sps/samlidp2/saml20/logininitial?RequestBinding=HTTPPost&PartnerId=myentityid&NameIdFormat=email&Target=https://cmap-cc-uc-other-vagabond.container-crush-02-4044f3a4e314f4bcb433696c70d13be9-0000.eu-de.containers.appdomain.cloud/login",
+      "spfile": "/saml/sp-metadata-new.xml",
+      "idpfile": "/saml/samlidp2_IBM_metadata_CIS_STAGE_new.xml",
+      "cookieSecret": "WmTS3c3tB3nEfItSW15c4pP"   
+    },
+    "prod": {
+      "pingIDPUrl":"https://w3id.alpha.sso.ibm.com/auth/sps/samlidp2/saml20/logininitial?RequestBinding=HTTPPost&PartnerId=myentityid&NameIdFormat=email&Target=https://cmap-cc-uc-other-vagabond.container-crush-02-4044f3a4e314f4bcb433696c70d13be9-0000.eu-de.containers.appdomain.cloud/login",
+      "spfile": "/saml/sp-metadata.xml",
+      "idpfile": "/saml/samlidp2_IBM_metadata_CIS_STAGE_new.xml",
+      "cookieSecret": "WmTS3c3tB3nEfItSW15c4pP" 
+    }
+  }
+  

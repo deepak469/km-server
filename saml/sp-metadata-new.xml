@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="myentityid">
+    <md:Organization>
+    	<md:OrganizationName xml:lang="en">myentityid</md:OrganizationName>
+      	<md:OrganizationDisplayName xml:lang="en">myentityid</md:OrganizationDisplayName>
+      	<md:OrganizationURL xml:lang="en">myentityid</md:OrganizationURL>
+    </md:Organization>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://km-cc-uc-other-virtual-learning-institute.container-crush-02-4044f3a4e314f4bcb433696c70d13be9-0000.eu-de.containers.appdomain.cloud/login" index="0"/>
+    </md:SPSSODescriptor>
+</md:EntityDescriptor>

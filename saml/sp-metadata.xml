@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="myentityid">
+    <md:Organization>
+    	<md:OrganizationName xml:lang="en">myentityid</md:OrganizationName>
+      	<md:OrganizationDisplayName xml:lang="en">myentityid</md:OrganizationDisplayName>
+      	<md:OrganizationURL xml:lang="en">myentityid</md:OrganizationURL>
+    </md:Organization>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="localhost:8888/login" index="0"/>
+    </md:SPSSODescriptor>
+</md:EntityDescriptor>
