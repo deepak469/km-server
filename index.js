@@ -62,7 +62,7 @@ app.get("/km/getUserData", function (req, res) {
       res.end();
     } else {
       console.info('Returning data from session...' + JSON.stringify(req.session.userData));
-      res.json(req.session.userData);
+      res.json(JSON.stringify(req.session.userData));
     }
   });
 
@@ -79,6 +79,14 @@ app.get("/login", function(req, res){
 
 
 app.get("/test", function(req, res){
+    var userData = {
+        userId: 'test@test.com',
+        firstName: 'fTest',
+        lastName: 'lTest',
+        fullName: 'fName',
+        emailAddress: 'email'
+    }
+    req.session.userData = userData;
     res.sendFile(__dirname + '/app/index.html');
 });
 
@@ -93,8 +101,8 @@ app.post("/login", function(req, res){
             userId: parseResult.extract.attribute.uid,
             firstName: parseResult.extract.attribute.firstName,
             lastName: parseResult.extract.attribute.lastName,
-            fullName: parseResult.extract.attribute.fullName,
-            emailAddress: parseResult.extract.attribute.emailAddress
+            fullName: parseResult.extract.attribute.cn,
+            emailAddress: parseResult.extract.attribute.emailaddress
         }
         req.session.userData = userData;
         console.info('KM W3 sso user info ' + JSON.stringify(req.session.userData));
