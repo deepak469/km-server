@@ -9,7 +9,7 @@
   "author": "Deepak Marneni",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "body-parser": "^1.17.1",
     "client-sessions": "^0.8.0",
     "crypto-js": "^3.1.9-1",
